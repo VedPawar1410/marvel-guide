@@ -1,0 +1,1226 @@
+[
+  {
+    "id": 1,
+    "title": "Captain America",
+    "type": "Series",
+    "release_date": "1944-02-05",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 2,
+    "title": "The Amazing Spider-Man",
+    "type": "Series",
+    "release_date": "1977-09-14",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 3,
+    "title": "The Incredible Hulk",
+    "type": "Series",
+    "release_date": "1977-11-04",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 4,
+    "title": "Dr. Strange",
+    "type": "Movie",
+    "release_date": "1978-09-10",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 5,
+    "title": "Spider-Man (Japanese series)",
+    "type": "Series",
+    "release_date": "1978-05-17",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 6,
+    "title": "Captain America",
+    "type": "Movie",
+    "release_date": "1979-01-19",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 7,
+    "title": "Captain America II: Death Too Soon",
+    "type": "Movie",
+    "release_date": "1979-11-23",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 8,
+    "title": "Howard the Duck",
+    "type": "Movie",
+    "release_date": "1986-08-01",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 9,
+    "title": "The Incredible Hulk Returns",
+    "type": "Movie",
+    "release_date": "1988-05-22",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 10,
+    "title": "The Punisher",
+    "type": "Movie",
+    "release_date": "1989-10-05",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 11,
+    "title": "The Trial of the Incredible Hulk",
+    "type": "Movie",
+    "release_date": "1989-05-07",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 12,
+    "title": "Captain America",
+    "type": "Movie",
+    "release_date": "1990-07-22",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 13,
+    "title": "The Death of the Incredible Hulk",
+    "type": "Movie",
+    "release_date": "1990-02-18",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 14,
+    "title": "The Fantastic Four",
+    "type": "Movie",
+    "release_date": "1994-01-01",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 15,
+    "title": "Generation X",
+    "type": "Movie",
+    "release_date": "1996-02-20",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 16,
+    "title": "Nick Fury: Agent of S.H.I.E.L.D.",
+    "type": "Movie",
+    "release_date": "1998-05-21",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 17,
+    "title": "Blade",
+    "type": "Movie",
+    "release_date": "1998-08-21",
+    "era": "The Early Years (Pre-2000s)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 18,
+    "title": "X-Men",
+    "type": "Movie",
+    "release_date": "2000-07-14",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 19,
+    "title": "Blade II",
+    "type": "Movie",
+    "release_date": "2002-03-22",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 20,
+    "title": "Spider-Man",
+    "type": "Movie",
+    "release_date": "2002-05-03",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 21,
+    "title": "Daredevil",
+    "type": "Movie",
+    "release_date": "2003-02-14",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 22,
+    "title": "X2: X-Men United",
+    "type": "Movie",
+    "release_date": "2003-05-02",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 23,
+    "title": "Hulk",
+    "type": "Movie",
+    "release_date": "2003-06-20",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 24,
+    "title": "The Punisher",
+    "type": "Movie",
+    "release_date": "2004-04-16",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 25,
+    "title": "Spider-Man 2",
+    "type": "Movie",
+    "release_date": "2004-06-30",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 26,
+    "title": "Blade: Trinity",
+    "type": "Movie",
+    "release_date": "2004-12-08",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 27,
+    "title": "Elektra",
+    "type": "Movie",
+    "release_date": "2005-01-14",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 28,
+    "title": "Man-Thing",
+    "type": "Movie",
+    "release_date": "2005-04-30",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 29,
+    "title": "Fantastic Four",
+    "type": "Movie",
+    "release_date": "2005-07-08",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 30,
+    "title": "X-Men: The Last Stand",
+    "type": "Movie",
+    "release_date": "2006-05-26",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 31,
+    "title": "Ghost Rider",
+    "type": "Movie",
+    "release_date": "2007-02-16",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 32,
+    "title": "Spider-Man 3",
+    "type": "Movie",
+    "release_date": "2007-05-04",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 33,
+    "title": "Fantastic Four: Rise of the Silver Surfer",
+    "type": "Movie",
+    "release_date": "2007-06-15",
+    "era": "The Licensed Era (2000\u20132008)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 34,
+    "title": "Iron Man",
+    "type": "Movie",
+    "release_date": "2008-05-02",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 35,
+    "title": "The Incredible Hulk",
+    "type": "Movie",
+    "release_date": "2008-06-13",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 36,
+    "title": "Punisher: War Zone",
+    "type": "Movie",
+    "release_date": "2008-12-05",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 37,
+    "title": "X-Men Origins: Wolverine",
+    "type": "Movie",
+    "release_date": "2009-05-01",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 38,
+    "title": "Iron Man 2",
+    "type": "Movie",
+    "release_date": "2010-05-07",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 39,
+    "title": "Thor",
+    "type": "Movie",
+    "release_date": "2011-05-06",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 40,
+    "title": "X-Men: First Class",
+    "type": "Movie",
+    "release_date": "2011-06-03",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 41,
+    "title": "Captain America: The First Avenger",
+    "type": "Movie",
+    "release_date": "2011-07-22",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 42,
+    "title": "Ghost Rider: Spirit of Vengeance",
+    "type": "Movie",
+    "release_date": "2012-02-17",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 43,
+    "title": "The Avengers",
+    "type": "Movie",
+    "release_date": "2012-05-04",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 44,
+    "title": "The Amazing Spider-Man",
+    "type": "Movie",
+    "release_date": "2012-07-03",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 45,
+    "title": "Iron Man 3",
+    "type": "Movie",
+    "release_date": "2013-05-03",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 46,
+    "title": "The Wolverine",
+    "type": "Movie",
+    "release_date": "2013-07-26",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 47,
+    "title": "Agents of S.H.I.E.L.D.",
+    "type": "Series",
+    "release_date": "2013-09-24",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 48,
+    "title": "Thor: The Dark World",
+    "type": "Movie",
+    "release_date": "2013-11-08",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 49,
+    "title": "Captain America: The Winter Soldier",
+    "type": "Movie",
+    "release_date": "2014-04-04",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 50,
+    "title": "The Amazing Spider-Man 2",
+    "type": "Movie",
+    "release_date": "2014-05-02",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 51,
+    "title": "X-Men: Days of Future Past",
+    "type": "Movie",
+    "release_date": "2014-05-23",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 52,
+    "title": "Guardians of the Galaxy",
+    "type": "Movie",
+    "release_date": "2014-08-01",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 53,
+    "title": "Agent Carter",
+    "type": "Series",
+    "release_date": "2015-01-06",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 54,
+    "title": "Daredevil",
+    "type": "Series",
+    "release_date": "2015-04-10",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 55,
+    "title": "Avengers: Age of Ultron",
+    "type": "Movie",
+    "release_date": "2015-05-01",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 56,
+    "title": "Ant-Man",
+    "type": "Movie",
+    "release_date": "2015-07-17",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 57,
+    "title": "Fantastic Four",
+    "type": "Movie",
+    "release_date": "2015-08-07",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 58,
+    "title": "Jessica Jones",
+    "type": "Series",
+    "release_date": "2015-11-20",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 59,
+    "title": "Deadpool",
+    "type": "Movie",
+    "release_date": "2016-02-12",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 60,
+    "title": "Captain America: Civil War",
+    "type": "Movie",
+    "release_date": "2016-05-06",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 61,
+    "title": "X-Men: Apocalypse",
+    "type": "Movie",
+    "release_date": "2016-05-27",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 62,
+    "title": "Luke Cage",
+    "type": "Series",
+    "release_date": "2016-09-30",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 63,
+    "title": "Doctor Strange",
+    "type": "Movie",
+    "release_date": "2016-11-04",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 64,
+    "title": "Legion",
+    "type": "Series",
+    "release_date": "2017-02-08",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 65,
+    "title": "Logan",
+    "type": "Movie",
+    "release_date": "2017-03-03",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 66,
+    "title": "Iron Fist",
+    "type": "Series",
+    "release_date": "2017-03-17",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 67,
+    "title": "Guardians of the Galaxy Vol. 2",
+    "type": "Movie",
+    "release_date": "2017-05-05",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 68,
+    "title": "Spider-Man: Homecoming",
+    "type": "Movie",
+    "release_date": "2017-07-07",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 69,
+    "title": "The Defenders",
+    "type": "Series",
+    "release_date": "2017-08-18",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 70,
+    "title": "Inhumans",
+    "type": "Series",
+    "release_date": "2017-09-29",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 71,
+    "title": "The Gifted",
+    "type": "Series",
+    "release_date": "2017-10-02",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 72,
+    "title": "Thor: Ragnarok",
+    "type": "Movie",
+    "release_date": "2017-11-03",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 73,
+    "title": "The Punisher",
+    "type": "Series",
+    "release_date": "2017-11-17",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 74,
+    "title": "Runaways",
+    "type": "Series",
+    "release_date": "2017-11-21",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 75,
+    "title": "Black Panther",
+    "type": "Movie",
+    "release_date": "2018-02-16",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 76,
+    "title": "Jessica Jones (Season 2)",
+    "type": "Series",
+    "release_date": "2018-03-08",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 77,
+    "title": "Avengers: Infinity War",
+    "type": "Movie",
+    "release_date": "2018-04-27",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 78,
+    "title": "Deadpool 2",
+    "type": "Movie",
+    "release_date": "2018-05-18",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 79,
+    "title": "Cloak & Dagger",
+    "type": "Series",
+    "release_date": "2018-06-07",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 80,
+    "title": "Ant-Man and the Wasp",
+    "type": "Movie",
+    "release_date": "2018-07-06",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 81,
+    "title": "Venom",
+    "type": "Movie",
+    "release_date": "2018-10-05",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 82,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "type": "Movie",
+    "release_date": "2018-12-14",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 83,
+    "title": "Captain Marvel",
+    "type": "Movie",
+    "release_date": "2019-03-08",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 84,
+    "title": "Avengers: Endgame",
+    "type": "Movie",
+    "release_date": "2019-04-26",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 85,
+    "title": "Dark Phoenix",
+    "type": "Movie",
+    "release_date": "2019-06-07",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 86,
+    "title": "Spider-Man: Far From Home",
+    "type": "Movie",
+    "release_date": "2019-07-02",
+    "era": "The Infinity Saga (2008\u20132019)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 87,
+    "title": "The New Mutants",
+    "type": "Movie",
+    "release_date": "2020-08-28",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 88,
+    "title": "Helstrom",
+    "type": "Series",
+    "release_date": "2020-10-16",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 89,
+    "title": "WandaVision",
+    "type": "Series",
+    "release_date": "2021-01-15",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 90,
+    "title": "The Falcon and the Winter Soldier",
+    "type": "Series",
+    "release_date": "2021-03-19",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 91,
+    "title": "Loki",
+    "type": "Series",
+    "release_date": "2021-06-09",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 92,
+    "title": "Black Widow",
+    "type": "Movie",
+    "release_date": "2021-07-09",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 93,
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "type": "Movie",
+    "release_date": "2021-09-03",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 94,
+    "title": "Venom: Let There Be Carnage",
+    "type": "Movie",
+    "release_date": "2021-10-01",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 95,
+    "title": "Eternals",
+    "type": "Movie",
+    "release_date": "2021-11-05",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 96,
+    "title": "Hawkeye",
+    "type": "Series",
+    "release_date": "2021-11-24",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 97,
+    "title": "Spider-Man: No Way Home",
+    "type": "Movie",
+    "release_date": "2021-12-17",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 98,
+    "title": "Moon Knight",
+    "type": "Series",
+    "release_date": "2022-03-30",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 99,
+    "title": "Morbius",
+    "type": "Movie",
+    "release_date": "2022-04-01",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 100,
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "type": "Movie",
+    "release_date": "2022-05-06",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 101,
+    "title": "Ms. Marvel",
+    "type": "Series",
+    "release_date": "2022-06-08",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 102,
+    "title": "Thor: Love and Thunder",
+    "type": "Movie",
+    "release_date": "2022-07-08",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 103,
+    "title": "She-Hulk: Attorney at Law",
+    "type": "Series",
+    "release_date": "2022-08-18",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 104,
+    "title": "Werewolf by Night",
+    "type": "Special",
+    "release_date": "2022-10-07",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 105,
+    "title": "Black Panther: Wakanda Forever",
+    "type": "Movie",
+    "release_date": "2022-11-11",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 106,
+    "title": "The Guardians of the Galaxy Holiday Special",
+    "type": "Special",
+    "release_date": "2022-11-25",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 107,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "type": "Movie",
+    "release_date": "2023-02-17",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 108,
+    "title": "Guardians of the Galaxy Vol. 3",
+    "type": "Movie",
+    "release_date": "2023-05-05",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 109,
+    "title": "Spider-Man: Across the Spider-Verse",
+    "type": "Movie",
+    "release_date": "2023-06-02",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 110,
+    "title": "Secret Invasion",
+    "type": "Series",
+    "release_date": "2023-06-21",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 111,
+    "title": "Loki (Season 2)",
+    "type": "Series",
+    "release_date": "2023-10-05",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 112,
+    "title": "The Marvels",
+    "type": "Movie",
+    "release_date": "2023-11-10",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 113,
+    "title": "Echo",
+    "type": "Series",
+    "release_date": "2024-01-09",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 114,
+    "title": "Madame Web",
+    "type": "Movie",
+    "release_date": "2024-02-14",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 115,
+    "title": "X-Men '97",
+    "type": "Series",
+    "release_date": "2024-03-20",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 116,
+    "title": "Deadpool & Wolverine",
+    "type": "Movie",
+    "release_date": "2024-07-26",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 117,
+    "title": "Agatha All Along",
+    "type": "Series",
+    "release_date": "2024-09-18",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 118,
+    "title": "Venom: The Last Dance",
+    "type": "Movie",
+    "release_date": "2024-10-25",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 119,
+    "title": "What If...? (Season 3)",
+    "type": "Series",
+    "release_date": "2024-12-22",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 120,
+    "title": "Kraven the Hunter",
+    "type": "Movie",
+    "release_date": "2024-12-13",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 121,
+    "title": "Your Friendly Neighborhood Spider-Man",
+    "type": "Series",
+    "release_date": "2025-01-29",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 122,
+    "title": "Captain America: Brave New World",
+    "type": "Movie",
+    "release_date": "2025-02-14",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 123,
+    "title": "Thunderbolts*",
+    "type": "Movie",
+    "release_date": "2025-05-02",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 124,
+    "title": "Ironheart",
+    "type": "Series",
+    "release_date": "2025-06-24",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 125,
+    "title": "The Fantastic Four: First Steps",
+    "type": "Movie",
+    "release_date": "2025-07-25",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 126,
+    "title": "Eyes of Wakanda",
+    "type": "Series",
+    "release_date": "2025-08-06",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 127,
+    "title": "Marvel Zombies",
+    "type": "Series",
+    "release_date": "2025-10-03",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 128,
+    "title": "Wonder Man",
+    "type": "Series",
+    "release_date": "2026-01-27",
+    "era": "The Multiverse Saga (2020\u2013January 2026)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 129,
+    "title": "Daredevil: Born Again (Season 2)",
+    "type": "Series",
+    "release_date": "2026-03-04",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 130,
+    "title": "The Punisher (Special Presentation)",
+    "type": "Special",
+    "release_date": "2026-06-15",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 131,
+    "title": "X-Men '97 (Season 2)",
+    "type": "Series",
+    "release_date": "2026-06-15",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 132,
+    "title": "Spider-Man: Brand New Day",
+    "type": "Movie",
+    "release_date": "2026-07-31",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 133,
+    "title": "Spider-Noir",
+    "type": "Series",
+    "release_date": "2026-09-15",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 134,
+    "title": "Your Friendly Neighbourhood Spider-Man (Season 2)",
+    "type": "Series",
+    "release_date": "2026-09-15",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 135,
+    "title": "VisionQuest",
+    "type": "Series",
+    "release_date": "2026-09-15",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  },
+  {
+    "id": 136,
+    "title": "Avengers: Doomsday",
+    "type": "Movie",
+    "release_date": "2026-12-18",
+    "era": "The Road to Doomsday (2026 Schedule)",
+    "watched": false,
+    "poster_url": ""
+  }
+]
