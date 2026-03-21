@@ -18,7 +18,7 @@ app.add_middleware(
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:3000",
-        "https://marvel-guide.vercel.app",        # replace with your actual Vercel URL
+        "https://marvel-guide-liard.vercel.app/",        # replace with your actual Vercel URL
         "https://marvel-guide-*.vercel.app",      # covers Vercel preview/branch deployments
     ],
     allow_credentials=True,
