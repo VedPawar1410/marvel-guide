@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react'
+import { Check, ExternalLink } from 'lucide-react'
 
 /**
  * MovieCard Component
@@ -27,6 +27,13 @@ function MovieCard({ movie, onToggleWatched }) {
       default:
         return 'bg-gray-600/20 text-gray-400 border-gray-600/30'
     }
+  }
+
+  /** Build a Google search URL for the movie, including the release year */
+  const getGoogleSearchUrl = (title, releaseDate) => {
+    const year = releaseDate ? new Date(releaseDate).getFullYear() : null
+    const query = year ? `${title} (${year})` : title
+    return `https://www.google.com/search?q=${encodeURIComponent(query)}`
   }
 
   return (
@@ -71,20 +78,35 @@ function MovieCard({ movie, onToggleWatched }) {
         {movie.era}
       </p>
 
-      {/* Watched checkbox */}
-      <label className="flex items-center gap-2 cursor-pointer group/checkbox">
-        <input
-          type="checkbox"
-          checked={movie.watched || false}
-          onChange={(e) => onToggleWatched(movie.id, e.target.checked)}
-          className="w-4 h-4 rounded border-gray-600 bg-white/5 text-red-600 
-                     focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-slate-900
-                     cursor-pointer"
-        />
-        <span className="text-sm text-gray-300 group-hover/checkbox:text-white transition-colors">
-          Watched
-        </span>
-      </label>
+      {/* Bottom row: Watched + Google link */}
+      <div className="flex items-center justify-between">
+        {/* Watched checkbox */}
+        <label className="flex items-center gap-2 cursor-pointer group/checkbox">
+          <input
+            type="checkbox"
+            checked={movie.watched || false}
+            onChange={(e) => onToggleWatched(movie.id, e.target.checked)}
+            className="w-4 h-4 rounded border-gray-600 bg-white/5 text-red-600 
+                       focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-slate-900
+                       cursor-pointer"
+          />
+          <span className="text-sm text-gray-300 group-hover/checkbox:text-white transition-colors">
+            Watched
+          </span>
+        </label>
+
+        {/* Google search link */}
+        <a
+          href={getGoogleSearchUrl(movie.title, movie.release_date)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-400 transition-colors"
+          title={`Search "${movie.title}" on Google`}
+        >
+          <ExternalLink className="w-3 h-3" />
+          <span>Google</span>
+        </a>
+      </div>
     </div>
   )
 }

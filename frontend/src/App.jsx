@@ -1,8 +1,15 @@
 import { useState, useEffect } from 'react'
-import { Filter, Calendar, Clock, Eye, Search } from 'lucide-react'
+import { Filter, Calendar, Clock, Eye, Search, Film, Tv, Star } from 'lucide-react'
 import MovieCard from './components/MovieCard'
 import { sortMovies } from './utils/sortMovies'
 import './App.css'
+
+// Eras to exclude from the filter UI (legacy/non-MCU eras)
+const HIDDEN_ERAS = [
+  'The Early Years (Pre-2000s)',
+  'The Licensed Era (2000\u20132008)',
+  'The Infinity Saga (2008\u20132019)',
+]
 
 /**
  * Main App Component - Marvel Movie Guide Dashboard
@@ -43,8 +50,12 @@ function App() {
     }
   }
 
-  // Get unique eras for filter
-  const eras = ['all', ...new Set(movies.map(movie => movie.era))]
+  // Get unique eras for filter (excluding the hidden legacy eras)
+  const eras = ['all', ...new Set(
+    movies
+      .filter(movie => !HIDDEN_ERAS.includes(movie.era))
+      .map(movie => movie.era)
+  )]
 
   // Filter and sort movies
   useEffect(() => {
@@ -92,10 +103,19 @@ function App() {
     }
   }
 
-  // Get stats
+  // Get overall stats
   const totalMovies = movies.length
   const watchedCount = movies.filter(m => m.watched).length
   const progress = totalMovies > 0 ? Math.round((watchedCount / totalMovies) * 100) : 0
+
+  // Per-type stats
+  const TYPE_LABELS = { Movie: 'Movies', Series: 'Series', Special: 'Specials' }
+  const typeStats = ['Movie', 'Series', 'Special'].map(type => {
+    const all = movies.filter(m => m.type === type)
+    const watched = all.filter(m => m.watched).length
+    const pct = all.length > 0 ? Math.round((watched / all.length) * 100) : 0
+    return { type, label: TYPE_LABELS[type], total: all.length, watched, pct }
+  })
 
   if (loading) {
     return (
@@ -121,12 +141,21 @@ function App() {
             </div>
             
             {/* Stats */}
-            <div className="flex gap-4">
-              <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-lg px-4 py-2">
-                <div className="text-xs text-gray-400">Progress</div>
+            <div className="flex gap-2 flex-wrap">
+              {/* Overall */}
+              <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-center">
+                <div className="text-xs text-gray-400 mb-0.5">Overall</div>
                 <div className="text-lg font-bold text-white">{progress}%</div>
                 <div className="text-xs text-gray-500">{watchedCount} / {totalMovies}</div>
               </div>
+              {/* Per-type stats */}
+              {typeStats.map(({ type, label, total, watched, pct }) => (
+                <div key={type} className="backdrop-blur-md bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-center">
+                  <div className="text-xs text-gray-400 mb-0.5">{label}</div>
+                  <div className="text-lg font-bold text-white">{pct}%</div>
+                  <div className="text-xs text-gray-500">{watched} / {total}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
