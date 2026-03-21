@@ -11,15 +11,16 @@ from pathlib import Path
 
 app = FastAPI(title="Marvel Movie Guide API")
 
-allow_origins=[
-    "http://localhost:5173",
-    "https://your-vercel-url.vercel.app",  # add this
-]
-
 # Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://localhost:3000",
+        "https://marvel-guide.vercel.app",        # replace with your actual Vercel URL
+        "https://marvel-guide-*.vercel.app",      # covers Vercel preview/branch deployments
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
