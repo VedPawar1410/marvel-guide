@@ -6,8 +6,3 @@ pythonVersion = "3.11"
 
 [deploy]
 startCommand = "uvicorn main:app --host 0.0.0.0 --port $PORT"
-```
-
-Also add a `.python-version` file inside `backend/`:
-```
-3.11.9
