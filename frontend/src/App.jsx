@@ -39,7 +39,7 @@ function App() {
 
   const fetchMovies = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/movies')
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/movies`)
       const data = await response.json()
       setMovies(data.movies)
       setFilteredMovies(data.movies)
@@ -82,7 +82,7 @@ function App() {
   // Toggle watched status
   const handleToggleWatched = async (movieId, watched) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/movies/${movieId}/watched`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/movies/${movieId}/watched`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
