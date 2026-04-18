@@ -19,7 +19,7 @@ export function sortMovies(movies, mode, chronologicalOrder = null) {
         return dateA - dateB
       })
 
-    case 'chronological':
+    case 'chronological': {
       // Sort by custom chronological order provided by user
       if (!chronologicalOrder || chronologicalOrder.length === 0) {
         // Fallback to ID order if no custom order provided
@@ -43,6 +43,7 @@ export function sortMovies(movies, mode, chronologicalOrder = null) {
         }
         return a.id - b.id
       })
+    }
 
     case 'unwatched':
       // Sort by watched status: unwatched (false) first, then watched (true)

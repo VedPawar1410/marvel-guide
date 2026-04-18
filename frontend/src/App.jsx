@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { Filter, Calendar, Clock, Eye, Search, Film, Tv, Star } from 'lucide-react'
+import { useState, useEffect, useCallback } from 'react'
+import { Filter, Calendar, Clock, Eye, Search } from 'lucide-react'
 import MovieCard from './components/MovieCard'
 import { sortMovies } from './utils/sortMovies'
 import './App.css'
@@ -20,6 +20,7 @@ const HIDDEN_ERAS = [
  * - Watched status tracking
  */
 function App() {
+  const apiBaseUrl = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '')
   const [movies, setMovies] = useState([])
   const [filteredMovies, setFilteredMovies] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
@@ -30,16 +31,11 @@ function App() {
   // Example: [1, 3, 5, 2, 4] means movie with id 1 comes first, then 3, then 5, etc.
   // To set your custom order, update this array with the movie IDs in your desired sequence
   // Example: const [chronologicalOrder, setChronologicalOrder] = useState([1, 3, 5, 2, 4, 6, ...])
-  const [chronologicalOrder, setChronologicalOrder] = useState([])
+  const [chronologicalOrder] = useState([])
 
-  // Fetch movies from API
-  useEffect(() => {
-    fetchMovies()
-  }, [])
-
-  const fetchMovies = async () => {
+  const fetchMovies = useCallback(async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/movies`)
+      const response = await fetch(`${apiBaseUrl}/api/movies`)
       const data = await response.json()
       setMovies(data.movies)
       setFilteredMovies(data.movies)
@@ -48,7 +44,12 @@ function App() {
       console.error('Error fetching movies:', error)
       setLoading(false)
     }
-  }
+  }, [apiBaseUrl])
+
+  // Fetch movies from API
+  useEffect(() => {
+    fetchMovies()
+  }, [fetchMovies])
 
   // Get unique eras for filter (excluding the hidden legacy eras)
   const eras = ['all', ...new Set(
@@ -82,7 +83,7 @@ function App() {
   // Toggle watched status
   const handleToggleWatched = async (movieId, watched) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/movies/${movieId}/watched`, {
+      const response = await fetch(`${apiBaseUrl}/api/movies/${movieId}/watched`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -162,7 +163,7 @@ function App() {
       </header>
 
       {/* Filters Bar */}
-      <div className="sticky top-[88px] z-40 backdrop-blur-xl bg-slate-900/60 border-b border-white/10">
+      <div className="relative md:sticky md:top-[88px] z-40 backdrop-blur-xl bg-slate-900/60 border-b border-white/10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col lg:flex-row gap-4">
             {/* Search */}
