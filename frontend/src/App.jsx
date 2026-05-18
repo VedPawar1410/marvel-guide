@@ -102,12 +102,7 @@ function App() {
       localStorage.setItem('marvel-guide-watched', JSON.stringify(saved))
       return next
     })
-    fetch(`${apiBaseUrl}/api/movies/${id}/watched`, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ watched }),
-    }).catch(() => {})
-  }, [apiBaseUrl])
+  }, [])
 
   const total        = movies.length
   const watchedCount = movies.filter(m => m.watched).length
