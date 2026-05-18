@@ -36,3 +36,6 @@ features.txt
 
 .
 backend/.env
+
+Marvel-Guide-handoff.zip
+backend/import_movies.py
