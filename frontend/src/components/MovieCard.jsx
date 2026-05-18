@@ -1,113 +1,66 @@
-import { Check, ExternalLink } from 'lucide-react'
+import { useState } from 'react'
 
-/**
- * MovieCard Component
- * Displays a single Marvel movie/show card with title, type, release date, and watched checkbox
- * Uses glassmorphism effect for a modern, cinematic look
- */
-function MovieCard({ movie, onToggleWatched }) {
-  const formatDate = (dateString) => {
-    if (!dateString) return 'TBA'
-    const date = new Date(dateString)
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'short', 
-      day: 'numeric' 
-    })
+const TYPE_CONFIG = {
+  Movie:   { color: '#E23636', label: 'MOVIE' },
+  Series:  { color: '#1E6FD9', label: 'SERIES' },
+  Special: { color: '#8B22E5', label: 'SPECIAL' },
+}
+
+function fmtDate(ds) {
+  if (!ds) return 'TBA'
+  try {
+    return new Date(ds).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+  } catch { return ds }
+}
+
+function MovieCard({ movie, onToggleWatched, index }) {
+  const [stamping, setStamping] = useState(false)
+  const tc = TYPE_CONFIG[movie.type] || { color: '#555', label: String(movie.type).toUpperCase() }
+
+  const handleChange = (e) => {
+    const checked = e.target.checked
+    if (checked) { setStamping(true); setTimeout(() => setStamping(false), 900) }
+    onToggleWatched(movie.id, checked)
   }
 
-  const getTypeColor = (type) => {
-    switch (type) {
-      case 'Movie':
-        return 'bg-red-600/20 text-red-400 border-red-600/30'
-      case 'Series':
-        return 'bg-blue-600/20 text-blue-400 border-blue-600/30'
-      case 'Special':
-        return 'bg-purple-600/20 text-purple-400 border-purple-600/30'
-      default:
-        return 'bg-gray-600/20 text-gray-400 border-gray-600/30'
-    }
-  }
-
-  /** Build a Google search URL for the movie, including the release year */
-  const getGoogleSearchUrl = (title, releaseDate) => {
-    const year = releaseDate ? new Date(releaseDate).getFullYear() : null
-    const query = year ? `${title} (${year})` : title
-    return `https://www.google.com/search?q=${encodeURIComponent(query)}`
-  }
+  const year = movie.release_date ? new Date(movie.release_date).getFullYear() : ''
+  const googleUrl = `https://www.google.com/search?q=${encodeURIComponent(`${movie.title}${year ? ` ${year}` : ''}`)}`
 
   return (
-    <div 
-      className={`
-        relative group
-        backdrop-blur-md bg-white/5 
-        border border-white/10 
-        rounded-xl p-4
-        hover:bg-white/10 
-        hover:border-red-600/50
-        transition-all duration-300
-        ${movie.watched ? 'opacity-75' : 'opacity-100'}
-      `}
+    <article
+      className={`mc${movie.watched ? ' mc--watched' : ''}`}
+      style={{ '--delay': `${Math.min(index, 22) * 40}ms`, '--tc': tc.color }}
     >
-      {/* Watched overlay indicator */}
+      <div className="mc__accent" />
+
+      <header className="mc__head">
+        <span className="mc__badge">{tc.label}</span>
+        {movie.watched && <span className="mc__tick">&#10003;</span>}
+      </header>
+
+      <h3 className="mc__title">{movie.title}</h3>
+      <p className="mc__date">{fmtDate(movie.release_date)}</p>
+      <p className="mc__era" title={movie.era}>{movie.era}</p>
+
       {movie.watched && (
-        <div className="absolute top-2 right-2">
-          <div className="bg-red-600/80 rounded-full p-1">
-            <Check className="w-3 h-3 text-white" />
-          </div>
-        </div>
+        <div className={`mc__stamp${stamping ? ' mc__stamp--anim' : ''}`}>WATCHED</div>
       )}
 
-      {/* Title */}
-      <h3 className="text-lg font-bold text-white mb-2 pr-8 line-clamp-2">
-        {movie.title}
-      </h3>
-
-      {/* Type badge */}
-      <div className="flex items-center gap-2 mb-3">
-        <span className={`px-2 py-1 rounded-md text-xs font-semibold border ${getTypeColor(movie.type)}`}>
-          {movie.type}
-        </span>
-        <span className="text-xs text-gray-400">
-          {formatDate(movie.release_date)}
-        </span>
-      </div>
-
-      {/* Era */}
-      <p className="text-xs text-gray-500 mb-3 line-clamp-1">
-        {movie.era}
-      </p>
-
-      {/* Bottom row: Watched + Google link */}
-      <div className="flex items-center justify-between">
-        {/* Watched checkbox */}
-        <label className="flex items-center gap-2 cursor-pointer group/checkbox">
+      <footer className="mc__foot">
+        <label className="mc__wlabel">
           <input
             type="checkbox"
-            checked={movie.watched || false}
-            onChange={(e) => onToggleWatched(movie.id, e.target.checked)}
-            className="w-4 h-4 rounded border-gray-600 bg-white/5 text-red-600 
-                       focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-slate-900
-                       cursor-pointer"
+            className="mc__cb"
+            checked={!!movie.watched}
+            onChange={handleChange}
           />
-          <span className="text-sm text-gray-300 group-hover/checkbox:text-white transition-colors">
-            Watched
-          </span>
+          <span>{movie.watched ? 'Watched' : 'Mark Watched'}</span>
         </label>
-
-        {/* Google search link */}
-        <a
-          href={getGoogleSearchUrl(movie.title, movie.release_date)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-400 transition-colors"
-          title={`Search "${movie.title}" on Google`}
-        >
-          <ExternalLink className="w-3 h-3" />
-          <span>Google</span>
+        <a className="mc__lookup" href={googleUrl} target="_blank" rel="noopener noreferrer">
+          Look Up &#8599;
         </a>
-      </div>
-    </div>
+      </footer>
+    </article>
   )
 }
 

@@ -34,3 +34,5 @@ public/
 assets/
 features.txt
 
+.
+backend/.env
