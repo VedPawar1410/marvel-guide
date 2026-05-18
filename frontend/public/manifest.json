@@ -1,0 +1,17 @@
+{
+  "name": "Marvel Guide",
+  "short_name": "Marvel Guide",
+  "description": "Your Complete MCU Watchlist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#E23636",
+  "icons": [
+    {
+      "src": "/mjolnir.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

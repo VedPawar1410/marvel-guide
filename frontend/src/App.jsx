@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import MovieCard from './components/MovieCard'
 import TweaksPanel from './components/TweaksPanel'
+import moviesData from './data/movies.json'
 import './App.css'
 
 const HIDDEN_ERAS = [
@@ -37,28 +38,21 @@ function StatCard({ label, pct, watched, total }) {
 }
 
 function App() {
-  const apiBaseUrl = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '')
   const [movies, setMovies]           = useState([])
   const [search, setSearch]           = useState('')
   const [sortBy, setSortBy]           = useState('release_date')
   const [era, setEra]                 = useState('all')
   const [loading, setLoading]         = useState(true)
-  const [error, setError]             = useState(false)
   const [tweaksOpen, setTweaksOpen]   = useState(false)
   const [tweaks, setTweaksState]      = useState({ accentColor: '#E23636', typeFilter: 'all' })
   const headerRef = useRef(null)
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('marvel-guide-watched') || '{}')
-    fetch(`${apiBaseUrl}/api/movies`)
-      .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.json() })
-      .then(data => {
-        const movies = data.movies || data
-        setMovies(movies.map(m => ({ ...m, watched: saved[m.id] ?? (m.watched || false) })))
-        setTimeout(() => setLoading(false), 700)
-      })
-      .catch(() => { setError(true); setLoading(false) })
-  }, [apiBaseUrl])
+    const list = moviesData.movies || moviesData
+    setMovies(list.map(m => ({ ...m, watched: saved[m.id] ?? false })))
+    setTimeout(() => setLoading(false), 700)
+  }, [])
 
   useEffect(() => {
     document.documentElement.style.setProperty('--accent', tweaks.accentColor)
@@ -120,13 +114,6 @@ function App() {
       <div className="splash__sub">GUIDE</div>
       <div className="splash__bar"><div className="splash__fill" /></div>
       <p className="splash__txt">Assembling the Universe&hellip;</p>
-    </div>
-  )
-
-  if (error) return (
-    <div className="splash">
-      <div className="splash__logo" style={{ background: '#555' }}>ERROR</div>
-      <p className="splash__txt" style={{ color: '#888' }}>Could not load movie data.</p>
     </div>
   )
 

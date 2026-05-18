@@ -30,7 +30,7 @@ venv/
 venv/*
 
 frontend/node_modules/
-public/
+frontend/dist/assets/
 assets/
 features.txt
 
